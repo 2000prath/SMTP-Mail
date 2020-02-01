@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block body %}
+        <form action="/register" method="post" >
+             <input name=name placeholder="Name" type="text" >  
+             <input type="email" name=email placeholder="Email">
+             <select name=country>
+                <option selected value=India>India</option>
+                <option value=US>US</option>
+                <option value=UK>UK</option>
+                <option value=London>London</option>
+             </select>
+             <input type="submit" value="register">   
+        </form>
+{% endblock %}
