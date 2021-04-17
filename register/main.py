@@ -30,8 +30,8 @@ def register():
       message="""Subject: this is subject """
       server= smtplib.SMTP("smtp.gmail.com", 587)
       server.starttls()
-      server.login("2000prathstorage@gmail.com","pythonpp@")
-      server.sendmail("2000prath1@gmail.com",email,message)
+      server.login("your_email_address","password")
+      server.sendmail("your_email_address",email,message)
    except:
       return "something went wrong" 
    return render_template("info.html",students=students)
